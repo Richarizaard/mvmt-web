@@ -21,10 +21,7 @@ const PageIntroCard = ({
           <div className="leading-normal ">
             <div className="pb-4 text-7xl font-semibold ">
               {title + "\n"}
-              <Typed
-                strings={["Movement"]}
-                typeSpeed={200}
-              />
+              <Typed strings={["Movement"]} typeSpeed={200} />
             </div>
 
             <div className="text-lg">{desc}</div>
