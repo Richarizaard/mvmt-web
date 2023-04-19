@@ -1,6 +1,6 @@
-import SVGIcon from "../utils/Icon"
-import MvmtHeader2 from "../utils/typography/MvmtHeader2"
-import MvmtParagraphMedium from "../utils/typography/MvmtParagraphMedium"
+import SVGIcon from 'utils/Icon'
+import MvmtHeader2 from 'utils/typography/MvmtHeader2'
+import MvmtParagraphMedium from 'utils/typography/MvmtParagraphMedium'
 
 interface FeatureCardProps {
   text: string

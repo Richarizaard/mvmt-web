@@ -1,10 +1,9 @@
-import React from "react"
-import Homepage from "./domains/Homepage"
+import PublicRoutes from './routes/PublicRoutes'
 
 export default function App() {
   return (
-    <div className="bg-mvmt h-full py-8 px-8 tl:py-28 tl:px-36 flex justify-center">
-      <Homepage />
+    <div className="bg-mvmt h-full py-12 px-8 tl:py-28 tl:px-36 flex justify-center">
+      <PublicRoutes />
     </div>
   )
 }

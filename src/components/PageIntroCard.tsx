@@ -1,8 +1,8 @@
-import Typed from "react-typed"
-import useMediaQuery from "../utils/hooks/useMediaQuery"
-import MvmtParagraphLarge from "../utils/typography/MvmtPargraphLarge"
+import Typed from 'react-typed'
+import useMediaQuery from 'utils/hooks/useMediaQuery'
+import MvmtParagraphLarge from 'utils/typography/MvmtPargraphLarge'
 
-export const MAX_WIDTH_PHONE = "639px"
+export const MAX_WIDTH_PHONE = '639px'
 
 interface PageIntroCardProps {
   title: string
@@ -22,10 +22,10 @@ const PageIntroCard = ({
   const isMobile = useMediaQuery(`(max-width: ${MAX_WIDTH_PHONE})`)
 
   return (
-    <div className="grid grid-cols-2 py-16">
+    <div className="grid grid-cols-2 py-12">
       <div className="leading-normal col-span-2 sm:col-span-1">
         <div className="pb-2 md:pb-4 text-4xl md:text-7xl font-semibold ">
-          {title + "\n"}
+          {title + '\n'}
           <Typed strings={typedStrings} typeSpeed={200} startDelay={750} />
         </div>
 

@@ -1,15 +1,15 @@
-import useMediaQuery from "../utils/hooks/useMediaQuery"
-import MvmtHeader3 from "../utils/typography/MvmtHeader3"
-import MvmtParagraphMedium from "../utils/typography/MvmtParagraphMedium"
+import useMediaQuery from 'utils/hooks/useMediaQuery'
+import MvmtHeader3 from 'utils/typography/MvmtHeader3'
+import MvmtParagraphMedium from 'utils/typography/MvmtParagraphMedium'
 
-export const MAX_WIDTH_PHONE = "639px"
+export const MAX_WIDTH_PHONE = '639px'
 
 interface PageDetailsCardProps {
   title: string
   desc: string
   img?: string
   ctaButtons?: boolean
-  alignment: "left" | "right"
+  alignment: 'left' | 'right'
 }
 
 const PageDetailsCard = ({
@@ -17,7 +17,7 @@ const PageDetailsCard = ({
   desc,
   img,
   ctaButtons = false,
-  alignment = "left",
+  alignment = 'left',
 }: PageDetailsCardProps) => {
   const isMobile = useMediaQuery(`(max-width: ${MAX_WIDTH_PHONE})`)
 
@@ -25,11 +25,11 @@ const PageDetailsCard = ({
     <div className="grid grid-cols-2 py-4 sm:py-12 gap-2 sm:gap-32 animate-fadeIn">
       <div
         className={`leading-normal col-span-2 sm:col-span-1 ${
-          alignment === "left"
-            ? "order-last"
+          alignment === 'left'
+            ? 'order-last'
             : isMobile
-            ? "order-last"
-            : "order-first"
+            ? 'order-last'
+            : 'order-first'
         }`}
       >
         <MvmtHeader3 className="pb-2 md:pb-4">{title}</MvmtHeader3>
