@@ -3,7 +3,7 @@ import Homepage from "./Homepage";
 
 export default function App() {
   return (
-    <div className="bg-mvmt h-screen pt-36 px-36">
+    <div className="bg-mvmt h-full py-28 px-36 flex justify-center">
       <Homepage />
     </div>
   );
