@@ -1,3 +1,4 @@
+import { useNavigate } from 'react-router-dom'
 import Typed from 'react-typed'
 import useMediaQuery from 'utils/hooks/useMediaQuery'
 import MvmtParagraphLarge from 'utils/typography/MvmtPargraphLarge'
@@ -19,6 +20,7 @@ const PageIntroCard = ({
   img,
   ctaButtons = false,
 }: PageIntroCardProps) => {
+  const nav = useNavigate()
   const isMobile = useMediaQuery(`(max-width: ${MAX_WIDTH_PHONE})`)
 
   return (
@@ -28,14 +30,17 @@ const PageIntroCard = ({
           {title && title}
           <br />
           {typedStrings && (
-            <Typed strings={typedStrings} typeSpeed={200} startDelay={500} />
+            <Typed strings={typedStrings} typeSpeed={typedStrings[0] === "Movement" ? 300 : 100} startDelay={300} />
           )}
         </div>
 
         {desc && <MvmtParagraphLarge>{desc}</MvmtParagraphLarge>}
         {ctaButtons && (
           <div className="flex justify-start gap-4 py-4 text-xs lg:text-base ">
-            <button className="rounded-full border tl:min-w-[110px] bg-sky-500 text-white p-2 px-4">
+            <button
+              className="rounded-full border tl:min-w-[110px] bg-sky-500 text-white p-2 px-4"
+              onClick={() => nav('/new-here')}
+            >
               New here?
             </button>
             <button className="rounded-full border ease-in-out duration-500 border-sky-500 hover:bg-sky-500 hover:text-white p-2 px-4">

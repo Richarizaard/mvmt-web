@@ -1,3 +1,5 @@
+import { useNavigate, Link } from 'react-router-dom'
+
 import PageDetailsCard from 'components/PageDetailsCard'
 import PageIntroCard from 'components/PageIntroCard'
 
@@ -8,6 +10,8 @@ import outreach from 'assets/outreach.jpeg'
 import FeatureCard from 'components/FeatureCard'
 
 const Homepage = () => {
+  const nav = useNavigate()
+
   return (
     <>
       <PageIntroCard
@@ -22,21 +26,27 @@ const Homepage = () => {
           text={`11:00 AM - In person and online`}
           title="Sunday worship"
           svg={'cross'}
+          onClick={() =>
+            window.open('https://www.youtube.com/@MovementMinistry')
+          }
         />
         <FeatureCard
           text={`Are you new or planning to visit soon? We have some answers to questions you might be wondering!`}
           title="New here?"
           svg={'profile'}
+          onClick={() => nav('/new-here')}
         />
         <FeatureCard
           text={`To raise fruitful and impactful followers of Jesus Christ.  `}
           title="Why we exist"
           svg={'bible'}
+          onClick={() => nav('/about-us')}
         />
         <FeatureCard
           text={`Questions or feedback? Drop us a note!`}
           title="Contact us"
           svg={'contactUs'}
+          onClick={() => nav('/contact-us')}
         />
       </div>
       <PageDetailsCard

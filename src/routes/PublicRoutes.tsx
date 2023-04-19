@@ -8,6 +8,8 @@ import Give from 'domains/Give'
 import ErrorPage from 'routes/ErrorPage'
 import MvmtHeader from 'components/MvmtHeader'
 import MvmtFooter from 'components/MvmtFooter'
+import ContactUs from 'domains/ContactUs'
+import NewHere from 'domains/NewHere'
 
 const PublicRoutes = () => {
   const router = createBrowserRouter([
@@ -56,7 +58,7 @@ const PublicRoutes = () => {
       errorElement: <ErrorPage />,
     },
     {
-      path: '/aboutUs',
+      path: '/about-us',
       element: (
         <>
           <MvmtHeader />
@@ -72,6 +74,28 @@ const PublicRoutes = () => {
         <>
           <MvmtHeader />
           <Give />
+          <MvmtFooter />
+        </>
+      ),
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: '/contact-us',
+      element: (
+        <>
+          <MvmtHeader />
+          <ContactUs />
+          <MvmtFooter />
+        </>
+      ),
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: '/new-here',
+      element: (
+        <>
+          <MvmtHeader />
+          <NewHere />
           <MvmtFooter />
         </>
       ),

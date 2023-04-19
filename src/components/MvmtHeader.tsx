@@ -13,7 +13,7 @@ const MvmtHeader = () => {
         <Link to={'/ministries'}>Ministries</Link>
         <Link to={'/sermons'}>Sermons</Link>
         <Link to={'/events'}>Events</Link>
-        <Link to={'/aboutUs'}>About us</Link>
+        <Link to={'/about-us'}>About us</Link>
       </div>
       <div className="flex items-center">
         <button className="rounded-lg bg-sky-500 text-white p-2 px-5">
