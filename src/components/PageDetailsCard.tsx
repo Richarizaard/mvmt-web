@@ -22,7 +22,7 @@ const PageDetailsCard = ({
   const isMobile = useMediaQuery(`(max-width: ${MAX_WIDTH_PHONE})`)
 
   return (
-    <div className="grid grid-cols-2 py-4 sm:py-12 gap-2 sm:gap-32 animate-fadeIn">
+    <div className="grid grid-cols-2 py-4 sm:py-8 gap-2 sm:gap-24 animate-fadeIn">
       <div
         className={`leading-normal col-span-2 sm:col-span-1 ${
           alignment === 'left'

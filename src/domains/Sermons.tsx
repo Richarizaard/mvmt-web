@@ -1,8 +1,8 @@
+import PageIntroCard from 'components/PageIntroCard'
+import home from 'assets/home.png'
 
 const Sermons = () => {
-  return (
-    <div>Sermons</div>
-  )
+  return <PageIntroCard typedStrings={['Sermons']} img={home} />
 }
 
 export default Sermons

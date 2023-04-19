@@ -6,37 +6,75 @@ import Sermons from 'domains/Sermons'
 import Events from 'domains/Events'
 import Give from 'domains/Give'
 import ErrorPage from 'routes/ErrorPage'
+import MvmtHeader from 'components/MvmtHeader'
+import MvmtFooter from 'components/MvmtFooter'
 
 const PublicRoutes = () => {
   const router = createBrowserRouter([
     {
       path: '/',
-      element: <Homepage />,
+      element: (
+        <>
+          <MvmtHeader />
+          <Homepage />
+          <MvmtFooter />
+        </>
+      ),
       errorElement: <ErrorPage />,
     },
     {
       path: '/ministries',
-      element: <Ministries />,
+      element: (
+        <>
+          <MvmtHeader />
+          <Ministries />
+          <MvmtFooter />
+        </>
+      ),
       errorElement: <ErrorPage />,
     },
     {
       path: '/sermons',
-      element: <Sermons />,
+      element: (
+        <>
+          <MvmtHeader />
+          <Sermons />
+          <MvmtFooter />
+        </>
+      ),
       errorElement: <ErrorPage />,
     },
     {
       path: '/events',
-      element: <Events />,
+      element: (
+        <>
+          <MvmtHeader />
+          <Events />
+          <MvmtFooter />
+        </>
+      ),
       errorElement: <ErrorPage />,
     },
     {
       path: '/aboutUs',
-      element: <AboutUs />,
+      element: (
+        <>
+          <MvmtHeader />
+          <AboutUs />
+          <MvmtFooter />
+        </>
+      ),
       errorElement: <ErrorPage />,
     },
     {
       path: '/give',
-      element: <Give />,
+      element: (
+        <>
+          <MvmtHeader />
+          <Give />
+          <MvmtFooter />
+        </>
+      ),
       errorElement: <ErrorPage />,
     },
   ])

@@ -7,7 +7,9 @@ const MvmtHeader = () => {
   return (
     <nav className="hidden md:flex w-full justify-between text-base font-semibold">
       <div className="flex justify-start gap-16 items-center">
-        <img src={logo} alt="" />
+        <Link to={'/'}>
+          <img src={logo} alt="" />
+        </Link>
         <Link to={'/ministries'}>Ministries</Link>
         <Link to={'/sermons'}>Sermons</Link>
         <Link to={'/events'}>Events</Link>

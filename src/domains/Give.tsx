@@ -1,8 +1,5 @@
-
 const Give = () => {
-  return (
-    <div>Give</div>
-  )
+  return <div>Give</div>
 }
 
 export default Give
