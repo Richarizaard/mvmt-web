@@ -1,4 +1,4 @@
-import logo from "./assets/test.jpg";
+import logo from "../assets/test.jpg";
 
 const MvmtHeader = () => {
   return (
@@ -12,7 +12,7 @@ const MvmtHeader = () => {
           <div>Events</div>
         </div>
         <div className="flex items-center">
-          <button className="rounded-lg bg-sky-500  text-white p-2 px-4">
+          <button className="rounded-lg bg-sky-500 text-white p-2 px-5">
             Donate
           </button>
         </div>
