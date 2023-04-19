@@ -1,4 +1,3 @@
-import MvmtHeader from 'components/MvmtHeader'
 import PageDetailsCard from 'components/PageDetailsCard'
 import PageIntroCard from 'components/PageIntroCard'
 

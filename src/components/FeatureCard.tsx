@@ -15,7 +15,7 @@ const FeatureCard = ({ text, title, svg }: FeatureCardProps) => {
         name={svg}
         className="group-hover:stroke-sky-500 group-hover:fill-sky-500"
       />
-      <MvmtHeader2 className="py-2 text-center group-hover:text-sky-500 group-hover:fill-sky-500">
+      <MvmtHeader2 className="py-2 text-center">
         {title}
       </MvmtHeader2>
       <MvmtParagraphMedium className="text-center">{text}</MvmtParagraphMedium>

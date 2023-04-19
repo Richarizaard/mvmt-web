@@ -2,7 +2,7 @@ import SVGIcon from 'utils/Icon'
 
 const MvmtFooter = () => {
   return (
-    <div className="flex flex-col justify-center items-center">
+    <div className="flex flex-col justify-center items-center pt-12 sm:pt-24">
       <div className="flex gap-4 pb-4 ">
         <SVGIcon name="facebook" fill="#0ea5e9" />
         <SVGIcon name="instagram" fill="#0ea5e9" />
