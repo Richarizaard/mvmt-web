@@ -1,4 +1,6 @@
 import SVGIcon from "../utils/Icon";
+import MvmtHeader2 from "../utils/typography/MvmtHeader2";
+import MvmtParagraphMedium from "../utils/typography/MvmtParagraphMedium";
 
 interface FeatureCardProps {
   text: string;
@@ -8,15 +10,15 @@ interface FeatureCardProps {
 
 const FeatureCard = ({ text, title, svg }: FeatureCardProps) => {
   return (
-    <div className="w-3/12 flex items-center flex-col p-2 m-2 cursor-pointer rounded-3xl shadow-black hover:shadow-lg group animate-fadeIn">
+    <div className="w-auto flex items-center flex-col p-2 m-2 cursor-pointer rounded-3xl shadow-black hover:shadow-lg group animate-fadeIn">
       <SVGIcon
         name={svg}
         className="group-hover:stroke-sky-500 group-hover:fill-sky-500"
       />
-      <h5 className="py-2 text-center text-xl font-semibold leading-snug normal-case no-underline group-hover:text-sky-500 group-hover:fill-sky-500">
+      <MvmtHeader2 className="py-2 text-center group-hover:text-sky-500 group-hover:fill-sky-500">
         {title}
-      </h5>
-      <span className="text-center">{text}</span>
+      </MvmtHeader2>
+      <MvmtParagraphMedium className="text-center">{text}</MvmtParagraphMedium>
     </div>
   );
 };

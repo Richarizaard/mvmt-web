@@ -10,10 +10,10 @@ import FeatureCard from "../components/FeatureCard";
 
 const Homepage = () => {
   return (
-    <div className="max-w-[1000px]">
-      <div className="flex items-start">
+    <div className="md:max-w-[1000px]">
+      {/* <div className="flex items-start">
         <MvmtHeader />
-      </div>
+      </div> */}
       <PageIntroCard
         title={"Welcome to"}
         typedStrings={["Movement"]}
@@ -22,7 +22,7 @@ const Homepage = () => {
         ctaButtons={true}
         alignment={"left"}
       />
-      <div className="flex justify-between">
+      <div className="grid grid-cols-[repeat(auto-fill,minmax(250px,auto))]">
         <FeatureCard
           text={`11:00 AM - 1150 South Dobson Road Chandler, AZ 85286`}
           title="Sunday worship"
