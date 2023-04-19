@@ -52,7 +52,9 @@ const PageIntroCard = ({
         <>
           {!isMobile && <img src={img} alt="" />}
           <div className="leading-normal col-span-2 sm:col-span-1">
-            <div className="pb-2 md:pb-4 text-4xl md:text-7xl font-semibold ">{title}</div>
+            <div className="pb-2 md:pb-4 text-4xl md:text-7xl font-semibold ">
+              {title}
+            </div>
             <MvmtParagraphLarge>{desc}</MvmtParagraphLarge>
             {ctaButtons && (
               <div className="flex justify-start gap-4 py-4 text-xs lg:text-base ">
