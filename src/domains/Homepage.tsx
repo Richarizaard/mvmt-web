@@ -16,6 +16,7 @@ const Homepage = () => {
       </div>
       <PageIntroCard
         title={"Welcome to"}
+        typedStrings={["Movement"]}
         desc={`We are a Christ-centered community committed to loving Jesus, our city, and the world. Our hope is that you and your family will find a place here to grow and be involved in God's work.`}
         img={home}
         ctaButtons={true}

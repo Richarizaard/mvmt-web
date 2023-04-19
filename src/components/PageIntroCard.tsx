@@ -1,6 +1,7 @@
 import Typed from "react-typed";
 interface PageIntroCardProps {
   title: string;
+  typedStrings: string[]
   desc: string;
   img?: string;
   ctaButtons?: boolean;
@@ -9,6 +10,7 @@ interface PageIntroCardProps {
 
 const PageIntroCard = ({
   title,
+  typedStrings,
   desc,
   img,
   ctaButtons = false,
@@ -21,7 +23,7 @@ const PageIntroCard = ({
           <div className="leading-normal ">
             <div className="pb-4 text-7xl font-semibold ">
               {title + "\n"}
-              <Typed strings={["Movement"]} typeSpeed={200} />
+              <Typed strings={typedStrings} typeSpeed={200} startDelay={750} />
             </div>
 
             <div className="text-lg">{desc}</div>
