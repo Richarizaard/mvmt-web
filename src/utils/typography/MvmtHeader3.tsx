@@ -1,9 +1,9 @@
-import { ReactNode } from "react";
-import { twMerge } from "tailwind-merge";
+import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface ChildrenProps {
-  children: ReactNode;
-  className?: string;
+  children: ReactNode
+  className?: string
 }
 
 const MvmtHeader1 = ({ children, className }: ChildrenProps) => (
@@ -15,6 +15,6 @@ const MvmtHeader1 = ({ children, className }: ChildrenProps) => (
   >
     {children}
   </h1>
-);
+)
 
-export default MvmtHeader1;
+export default MvmtHeader1

@@ -1,27 +1,27 @@
-import { useState, useEffect } from "react";
+import { useState, useEffect } from "react"
 
 // You can use this hook to conditionally render components based on media queries
 export default function useMediaQuery(query) {
-  const [matches, setMatches] = useState(false);
+  const [matches, setMatches] = useState(false)
 
   useEffect(() => {
-    const media = window.matchMedia(query);
+    const media = window.matchMedia(query)
     if (media.matches !== matches) {
-      setMatches(media.matches);
+      setMatches(media.matches)
     }
     const listener = () => {
-      setMatches(media.matches);
-    };
+      setMatches(media.matches)
+    }
 
     if (media.addEventListener) {
-      media.addEventListener("change", listener);
+      media.addEventListener("change", listener)
     }
     return () => {
       if (media.removeEventListener) {
-        media.removeEventListener("change", listener);
+        media.removeEventListener("change", listener)
       }
-    };
-  }, [matches, query]);
+    }
+  }, [matches, query])
 
-  return matches;
+  return matches
 }

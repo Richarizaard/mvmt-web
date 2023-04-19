@@ -1,10 +1,10 @@
-import { ReactNode } from "react";
-import { twMerge } from "tailwind-merge";
+import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface ChildrenProps {
-  children: ReactNode;
-  className?: string;
-  color?: string;
+  children: ReactNode
+  className?: string
+  color?: string
 }
 
 const MvmtParagraphLarge = ({
@@ -21,6 +21,6 @@ const MvmtParagraphLarge = ({
   >
     {children}
   </p>
-);
+)
 
-export default MvmtParagraphLarge;
+export default MvmtParagraphLarge

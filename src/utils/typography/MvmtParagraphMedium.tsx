@@ -1,10 +1,10 @@
-import { ReactNode } from "react";
-import { twMerge } from "tailwind-merge";
+import { ReactNode } from "react"
+import { twMerge } from "tailwind-merge"
 
 interface ChildrenProps {
-  children: ReactNode;
-  className?: string;
-  color?: string;
+  children: ReactNode
+  className?: string
+  color?: string
 }
 
 const MvmtParagraphMedium = ({
@@ -21,6 +21,6 @@ const MvmtParagraphMedium = ({
   >
     {children}
   </p>
-);
+)
 
-export default MvmtParagraphMedium;
+export default MvmtParagraphMedium

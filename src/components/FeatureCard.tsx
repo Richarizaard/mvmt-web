@@ -1,11 +1,11 @@
-import SVGIcon from "../utils/Icon";
-import MvmtHeader2 from "../utils/typography/MvmtHeader2";
-import MvmtParagraphMedium from "../utils/typography/MvmtParagraphMedium";
+import SVGIcon from "../utils/Icon"
+import MvmtHeader2 from "../utils/typography/MvmtHeader2"
+import MvmtParagraphMedium from "../utils/typography/MvmtParagraphMedium"
 
 interface FeatureCardProps {
-  text: string;
-  title: string;
-  svg: string;
+  text: string
+  title: string
+  svg: string
 }
 
 const FeatureCard = ({ text, title, svg }: FeatureCardProps) => {
@@ -20,7 +20,7 @@ const FeatureCard = ({ text, title, svg }: FeatureCardProps) => {
       </MvmtHeader2>
       <MvmtParagraphMedium className="text-center">{text}</MvmtParagraphMedium>
     </div>
-  );
-};
+  )
+}
 
-export default FeatureCard;
+export default FeatureCard

@@ -1,12 +1,12 @@
-import MvmtHeader from "../components/MvmtHeader";
-import PageDetailsCard from "../components/PageDetailsCard";
-import PageIntroCard from "../components/PageIntroCard";
+import MvmtHeader from "../components/MvmtHeader"
+import PageDetailsCard from "../components/PageDetailsCard"
+import PageIntroCard from "../components/PageIntroCard"
 
-import home from "../assets/home.png";
-import lifeGroup from "../assets/lifeGroup.jpeg";
-import serving from "../assets/serving.jpeg";
-import outreach from "../assets/outreach.jpeg";
-import FeatureCard from "../components/FeatureCard";
+import home from "../assets/home.png"
+import lifeGroup from "../assets/lifeGroup.jpeg"
+import serving from "../assets/serving.jpeg"
+import outreach from "../assets/outreach.jpeg"
+import FeatureCard from "../components/FeatureCard"
 
 const Homepage = () => {
   return (
@@ -66,7 +66,7 @@ const Homepage = () => {
         alignment={"right"}
       />
     </div>
-  );
-};
+  )
+}
 
-export default Homepage;
+export default Homepage

@@ -1,4 +1,4 @@
-import logo from "../assets/test.jpg";
+import logo from "../assets/test.jpg"
 
 const MvmtHeader = () => {
   return (
@@ -18,7 +18,7 @@ const MvmtHeader = () => {
         </div>
       </div>
     </>
-  );
-};
+  )
+}
 
-export default MvmtHeader;
+export default MvmtHeader

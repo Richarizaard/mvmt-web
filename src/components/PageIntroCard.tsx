@@ -1,17 +1,16 @@
-import Typed from "react-typed";
-import useMediaQuery from "../utils/hooks/useMediaQuery";
-import MvmtParagraphMedium from "../utils/typography/MvmtParagraphMedium";
-import MvmtParagraphLarge from "../utils/typography/MvmtPargraphLarge";
+import Typed from "react-typed"
+import useMediaQuery from "../utils/hooks/useMediaQuery"
+import MvmtParagraphLarge from "../utils/typography/MvmtPargraphLarge"
 
-export const MAX_WIDTH_PHONE = "639px";
+export const MAX_WIDTH_PHONE = "639px"
 
 interface PageIntroCardProps {
-  title: string;
-  typedStrings: string[];
-  desc: string;
-  img?: string;
-  ctaButtons?: boolean;
-  alignment: "left" | "right";
+  title: string
+  typedStrings: string[]
+  desc: string
+  img?: string
+  ctaButtons?: boolean
+  alignment: "left" | "right"
 }
 
 const PageIntroCard = ({
@@ -22,7 +21,7 @@ const PageIntroCard = ({
   ctaButtons = false,
   alignment = "left",
 }: PageIntroCardProps) => {
-  const isMobile = useMediaQuery(`(max-width: ${"640px"})`);
+  const isMobile = useMediaQuery(`(max-width: ${"640px"})`)
 
   return (
     <div className="grid grid-cols-2 pt-16">
@@ -70,7 +69,7 @@ const PageIntroCard = ({
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default PageIntroCard;
+export default PageIntroCard

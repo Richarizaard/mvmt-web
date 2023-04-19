@@ -1,13 +1,12 @@
-import MvmtHeader2 from "../utils/typography/MvmtHeader2";
-import MvmtHeader3 from "../utils/typography/MvmtHeader3";
-import MvmtParagraphMedium from "../utils/typography/MvmtParagraphMedium";
+import MvmtHeader3 from "../utils/typography/MvmtHeader3"
+import MvmtParagraphMedium from "../utils/typography/MvmtParagraphMedium"
 
 interface PageDetailsCardProps {
-  title: string;
-  desc: string;
-  img?: string;
-  ctaButtons?: boolean;
-  alignment: "left" | "right";
+  title: string
+  desc: string
+  img?: string
+  ctaButtons?: boolean
+  alignment: "left" | "right"
 }
 
 const PageDetailsCard = ({
@@ -55,7 +54,7 @@ const PageDetailsCard = ({
         </>
       )}
     </div>
-  );
-};
+  )
+}
 
-export default PageDetailsCard;
+export default PageDetailsCard
