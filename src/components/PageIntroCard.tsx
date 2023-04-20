@@ -11,6 +11,7 @@ interface PageIntroCardProps {
   desc?: string
   img?: string
   ctaButtons?: boolean
+  className?: string
 }
 
 const PageIntroCard = ({
@@ -19,6 +20,7 @@ const PageIntroCard = ({
   desc,
   img,
   ctaButtons = false,
+  className
 }: PageIntroCardProps) => {
   const nav = useNavigate()
   const isMobile = useMediaQuery(`(max-width: ${MAX_WIDTH_PHONE})`)
@@ -26,7 +28,7 @@ const PageIntroCard = ({
   return (
     <div className="grid grid-cols-2 py-6 sm:py-12">
       <div className="leading-normal col-span-2 sm:col-span-1">
-        <div className="pb-2 md:pb-4 text-4xl md:text-7xl font-semibold whitespace-pre-wrap">
+        <div className="pb-2 md:pb-4 text-4xl md:text-7xl font-semibold">
           {title && title}
           <br />
           {typedStrings && (
@@ -34,7 +36,7 @@ const PageIntroCard = ({
           )}
         </div>
 
-        {desc && <MvmtParagraphLarge>{desc}</MvmtParagraphLarge>}
+        {desc && <MvmtParagraphLarge className={className}>{desc}</MvmtParagraphLarge>}
         {ctaButtons && (
           <div className="flex justify-start gap-4 py-4 text-xs lg:text-base ">
             <button

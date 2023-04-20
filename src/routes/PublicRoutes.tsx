@@ -10,6 +10,7 @@ import MvmtHeader from 'components/MvmtHeader'
 import MvmtFooter from 'components/MvmtFooter'
 import ContactUs from 'domains/ContactUs'
 import NewHere from 'domains/NewHere'
+import Missions from 'domains/Missions'
 
 const PublicRoutes = () => {
   const router = createBrowserRouter([
@@ -96,6 +97,17 @@ const PublicRoutes = () => {
         <>
           <MvmtHeader />
           <NewHere />
+          <MvmtFooter />
+        </>
+      ),
+      errorElement: <ErrorPage />,
+    },
+    {
+      path: '/missions',
+      element: (
+        <>
+          <MvmtHeader />
+          <Missions />
           <MvmtFooter />
         </>
       ),

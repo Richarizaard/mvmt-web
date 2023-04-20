@@ -10,6 +10,7 @@ interface PageDetailsCardProps {
   img?: string
   ctaButtons?: boolean
   alignment: 'left' | 'right'
+  onClick?: () => void
 }
 
 const PageDetailsCard = ({
@@ -18,11 +19,15 @@ const PageDetailsCard = ({
   img,
   ctaButtons = false,
   alignment = 'left',
+  onClick,
 }: PageDetailsCardProps) => {
   const isMobile = useMediaQuery(`(max-width: ${MAX_WIDTH_PHONE})`)
 
   return (
-    <div className="grid grid-cols-2 py-4 sm:py-8 gap-2 sm:gap-24 animate-fadeIn">
+    <div
+      className="grid grid-cols-2 py-4 sm:py-8 gap-2 sm:gap-24 animate-fadeIn"
+      onClick={onClick}
+    >
       <div
         className={`leading-normal col-span-2 sm:col-span-1 ${
           alignment === 'left'

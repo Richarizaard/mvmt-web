@@ -54,6 +54,7 @@ const Homepage = () => {
         desc={`They're the heartbeat of our community. Groups meet weekly to study the Bible, build relationships, and encourage one another to follow Jesus.`}
         img={lifeGroup}
         ctaButtons={true}
+        onClick={() => {}}
         alignment={'right'}
       />
       <PageDetailsCard
@@ -61,6 +62,7 @@ const Homepage = () => {
         desc={`Serving is key to spiritual growth, not to mention a great way to connect with others in the church.  Learn more about opportunities.`}
         img={serving}
         ctaButtons={true}
+        onClick={() => nav('/ministries')}
         alignment={'left'}
       />
       <PageDetailsCard
@@ -68,6 +70,7 @@ const Homepage = () => {
         desc={`Impacting the world is our goal. Whether it's through supporting missionaries or taking short-term trips, we're excited to take part in God's work.`}
         img={outreach}
         ctaButtons={true}
+        onClick={() => nav('/missions')}
         alignment={'right'}
       />
     </>
