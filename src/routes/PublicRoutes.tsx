@@ -1,4 +1,4 @@
-import { createBrowserRouter, RouterProvider } from 'react-router-dom'
+import { createHashRouter, RouterProvider } from 'react-router-dom'
 import Homepage from 'domains/Homepage'
 import Ministries from 'domains/Ministries'
 import AboutUs from 'domains/AboutUs'
@@ -13,7 +13,7 @@ import NewHere from 'domains/NewHere'
 import Missions from 'domains/Missions'
 
 const PublicRoutes = () => {
-  const router = createBrowserRouter([
+  const router = createHashRouter([
     {
       path: '/',
       element: (
