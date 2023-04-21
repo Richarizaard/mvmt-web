@@ -10,7 +10,7 @@ const MvmtHeader2 = ({ children, className }: ChildrenProps) => (
   <h1
     className={twMerge(
       'font-semibold text-md sm:text-xl mb-0',
-      className // allow color, margin and padding overrides
+      className
     )}
   >
     {children}

@@ -15,8 +15,8 @@ const MvmtParagraphMedium = ({
   <p
     className={twMerge(
       `m-0 p-0 text-${color}`,
-      className, // allow color, margin and padding overrides
-      'text-[14px] font-normal sm:text-[16px]'
+      'text-[14px] font-normal sm:text-[16px]',
+      className
     )}
   >
     {children}

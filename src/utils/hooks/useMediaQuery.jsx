@@ -1,6 +1,5 @@
 import { useState, useEffect } from 'react'
 
-// You can use this hook to conditionally render components based on media queries
 export default function useMediaQuery(query) {
   const [matches, setMatches] = useState(false)
 
