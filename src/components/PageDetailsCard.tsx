@@ -49,7 +49,7 @@ const PageDetailsCard = ({
       </div>
       {img && (
         <div className="flex justify-center col-span-2 md:col-span-1">
-          <img className="rounded-2xl max-w-[450px]" src={img} alt="" />
+          <img className="rounded-2xl flex" src={img} alt="" />
         </div>
       )}
     </div>
