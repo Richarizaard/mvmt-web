@@ -20,23 +20,31 @@ const PageIntroCard = ({
   desc,
   img,
   ctaButtons = false,
-  className
+  className,
 }: PageIntroCardProps) => {
   const nav = useNavigate()
   const isMobile = useMediaQuery(`(max-width: ${MAX_WIDTH_PHONE})`)
 
   return (
-    <div className="grid grid-cols-2 pt-6 pb-2 sm:pt-12">
+    <div className="grid grid-cols-2 pt-6 pb-6 sm:pt-12">
       <div className="leading-normal col-span-2 sm:col-span-1">
-        <div className="pb-2 md:pb-4 text-4xl md:text-7xl font-semibold">
+        <div className="flex justify-start pb-2 md:pb-4 text-4xl md:text-7xl font-semibold">
           {title && title}
           <br />
           {typedStrings && (
-            <Typed strings={typedStrings} typeSpeed={typedStrings[0] === "Movement" ? 300 : 100} startDelay={300} />
+            <Typed
+              strings={typedStrings}
+              typeSpeed={typedStrings[0] === 'Movement' ? 300 : 100}
+              startDelay={300}
+            />
           )}
         </div>
 
-        {desc && <MvmtParagraphLarge className={"whitespace-pre-wrap"}>{desc}</MvmtParagraphLarge>}
+        {desc && (
+          <MvmtParagraphLarge className={'whitespace-pre-wrap'}>
+            {desc}
+          </MvmtParagraphLarge>
+        )}
         {ctaButtons && (
           <div className="flex justify-start gap-4 py-4 text-xs lg:text-base ">
             <button
@@ -51,7 +59,9 @@ const PageIntroCard = ({
           </div>
         )}
       </div>
-      {!isMobile && <img src={img} alt="" />}
+      <div className="flex justify-center items-center">
+        {!isMobile && <img src={img} alt="" />}
+      </div>
     </div>
   )
 }

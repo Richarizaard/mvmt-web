@@ -7,12 +7,7 @@ interface ChildrenProps {
 }
 
 const MvmtHeader2 = ({ children, className }: ChildrenProps) => (
-  <h1
-    className={twMerge(
-      'font-semibold text-md sm:text-xl mb-0',
-      className
-    )}
-  >
+  <h1 className={twMerge('font-semibold text-md sm:text-xl mb-0', className)}>
     {children}
   </h1>
 )

@@ -48,7 +48,7 @@ const Ministries = () => {
   return (
     <>
       <PageIntroCard
-        typedStrings={['Serve']}
+        typedStrings={['Ministries']}
         desc={`At Movement, we see serving as a way to build the church as well as an opportunity for growth and discipleship.`}
         img={home}
       />

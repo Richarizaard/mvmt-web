@@ -1,11 +1,17 @@
 import PageIntroCard from 'components/PageIntroCard'
-import home from 'assets/home.png'
+import pc from 'assets/pc.jpeg'
 import DropdownText from 'components/DropdownText'
 
 const AboutUs = () => {
   return (
     <>
-      <PageIntroCard typedStrings={['About us']} img={home} />
+      <PageIntroCard
+        typedStrings={['About us']}
+        img={pc}
+        desc={`Pastor Charles has served as the pastor of Movement Ministry (formerly known as TKPC English Ministry) since the summer of 2015.  After graduating college, he worked professionally for 12 years before becoming a full-time pastor.  He is originally from Illinois, where he spent nearly all his life until he and his family moved to AZ in 2015.  He is married to Sarah and together they have three boys - Noah, Matthew, and Deacon.
+          
+He has a Bachelor's in electrical engineering from the University of Illinois and a Master of Divinity from Columbia International University Seminary and School of Missions.`}
+      />
       <div className="max-w-[750px]">
         <DropdownText
           title={`Where we're going`}
