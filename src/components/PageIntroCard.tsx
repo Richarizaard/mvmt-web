@@ -2,6 +2,7 @@ import { useNavigate } from 'react-router-dom'
 import Typed from 'react-typed'
 import useMediaQuery from 'utils/hooks/useMediaQuery'
 import MvmtParagraphLarge from 'utils/typography/MvmtPargraphLarge'
+import { twMerge } from 'tailwind-merge'
 
 export const MAX_WIDTH_PHONE = '639px'
 
@@ -40,7 +41,9 @@ const PageIntroCard = ({
         </div>
 
         {desc && (
-          <MvmtParagraphLarge className={'whitespace-pre-wrap'}>
+          <MvmtParagraphLarge
+            className={twMerge('whitespace-pre-wrap', className)}
+          >
             {desc}
           </MvmtParagraphLarge>
         )}

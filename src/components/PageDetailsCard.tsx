@@ -38,7 +38,9 @@ const PageDetailsCard = ({
         }`}
       >
         <MvmtHeader3 className="pb-2 md:pb-4">{title}</MvmtHeader3>
-        <MvmtParagraphMedium>{desc}</MvmtParagraphMedium>
+        <MvmtParagraphMedium className="whitespace-pre-wrap">
+          {desc}
+        </MvmtParagraphMedium>
         {ctaButtons && (
           <div className="flex justify-start gap-4 py-4 text-sm">
             <button className="rounded-full border-2 border-sky-500 p-2 px-4 ease-in-out duration-500 hover:bg-sky-500 hover:text-white">
@@ -48,7 +50,7 @@ const PageDetailsCard = ({
         )}
       </div>
       {img && (
-        <div className="col-span-2 sm:col-span-1">
+        <div className="flex justify-center col-span-2 sm:col-span-1">
           <img className="rounded-2xl" src={img} alt="" />
         </div>
       )}
