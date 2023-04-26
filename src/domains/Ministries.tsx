@@ -27,10 +27,9 @@ const ministries = [
   },
   {
     title: 'Praise Ministry',
-    desc: `
-    We love music at Movement because of the power it has to draw us near to God.  There is nothing better we can do with our talents than to use them to worship God and lead others to worship as well.  Due to the nature of this ministry, those interested will need to apply.  Please contact us for more details. 
+    desc: `We love music at Movement because of the power it has to draw us near to God.  There is nothing better we can do with our talents than to use them to worship God and lead others to worship as well.  Due to the nature of this ministry, those interested will need to apply.  Please contact us for more details. 
     
-    This ministry also includes technical and A/V support needed for Sunday services to run smoothly.    `,
+This ministry also includes technical and A/V support needed for Sunday services to run smoothly.    `,
     img: praise,
   },
   {
@@ -52,7 +51,7 @@ const Ministries = () => {
         desc={`At Movement, we see serving as a way to build the church as well as an opportunity for growth and discipleship.`}
         img={home}
       />
-      <div className="grid grid-cols-[repeat(auto-fill,minmax(333px,auto))]">
+      <div className="grid sm:grid-cols-[repeat(auto-fill,minmax(333px,auto))] grid-cols-[repeat(auto-fill,minmax(200px,auto))]">
         {ministries.map((ministry, idx) => {
           return (
             <ContentCard
