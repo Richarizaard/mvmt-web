@@ -16,7 +16,7 @@ const DropdownText = ({ title, text }: DropdownTextProps) => {
         className="flex justify-between cursor-pointer hover:bg-gray-200 rounded-lg"
         onClick={() => setDropdown(!dropdown)}
       >
-        <MvmtHeader2 className="pb-2 md:pb-4">{title}</MvmtHeader2>
+        <MvmtHeader2 className="pb-4 md:pb-8 max-w-[300px] sm:max-w-none">{title}</MvmtHeader2>
 
         {dropdown ? (
           <SVGIcon name="chevron-up" />
@@ -25,9 +25,9 @@ const DropdownText = ({ title, text }: DropdownTextProps) => {
         )}
       </div>
       {dropdown && (
-        <div className="pt-6 md:pt-4 pb-2 md:pb-4">
+        <div className="pb-2 md:pb-4 animate-fadeIn">
           <MvmtParagraphMedium className="whitespace-pre-wrap">
-            {text}
+            <div dangerouslySetInnerHTML={{__html: text}}/>
           </MvmtParagraphMedium>
         </div>
       )}

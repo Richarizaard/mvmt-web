@@ -12,7 +12,7 @@ const AboutUs = () => {
           
 He has a Bachelor's in electrical engineering from the University of Illinois and a Master of Divinity from Columbia International University Seminary and School of Missions.`}
       />
-      <div className="max-w-[750px]">
+      <div className="max-w-[900px]">
         <DropdownText
           title={`Where we're going`}
           text={`Up and out.\n\nTrue Christianity isn't a mechanical following of rules. It is a life-giving (John 4:14) and fruit-producing (Galatians 5:22-23) relationship with God who is in the business of restoring and transforming people (2 Corinthians 5:17). We're not interested in merely being a nice church with nice people doing nice things. We want to be a church that's alive. We don't want to simply follow Jesus, we want him to be our sole passion and devotion
