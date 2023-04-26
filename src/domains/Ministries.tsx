@@ -53,9 +53,10 @@ const Ministries = () => {
         img={home}
       />
       <div className="grid grid-cols-[repeat(auto-fill,minmax(333px,auto))]">
-        {ministries.map((ministry) => {
+        {ministries.map((ministry, idx) => {
           return (
             <ContentCard
+              key={idx}
               title={ministry.title}
               desc={ministry.desc}
               img={ministry.img}

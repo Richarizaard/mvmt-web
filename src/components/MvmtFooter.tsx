@@ -10,24 +10,24 @@ const MvmtFooter = () => {
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SVGIcon name="facebook" fill="#0ea5e9" />
+          <SVGIcon name="facebook" className="hover:fill-sky-500" />
         </Link>
         <Link
           to="https://www.instagram.com/azmovement/"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SVGIcon name="instagram" fill="#0ea5e9" />
+          <SVGIcon name="instagram" className="hover:fill-sky-500" />
         </Link>
         <Link
           to="https://www.youtube.com/@MovementMinistry"
           target="_blank"
           rel="noopener noreferrer"
         >
-          <SVGIcon name="youtube" className="stroke-sky-500" />
+          <SVGIcon name="youtube" className="hover:fill-sky-500" />
         </Link>
         <Link to="/contact-us">
-          <SVGIcon name="email" className="stroke-sky-500" />
+          <SVGIcon name="email" className="hover:fill-sky-500" />
         </Link>
       </div>
       <div>

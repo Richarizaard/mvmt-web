@@ -47,9 +47,11 @@ const PageDetailsCard = ({
           </div>
         )}
       </div>
-      <div className="col-span-2 sm:col-span-1">
-        <img className="rounded-2xl" src={img} alt="" />
-      </div>
+      {img && (
+        <div className="col-span-2 sm:col-span-1">
+          <img className="rounded-2xl" src={img} alt="" />
+        </div>
+      )}
     </div>
   )
 }
