@@ -1,5 +1,8 @@
 import { useState, useEffect } from 'react'
 
+export const MAX_WIDTH_PHONE = "639px"
+export const MAX_WIDTH_TABLET = "768px"
+
 export default function useMediaQuery(query) {
   const [matches, setMatches] = useState(false)
 

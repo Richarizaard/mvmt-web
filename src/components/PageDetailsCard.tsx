@@ -1,8 +1,6 @@
-import useMediaQuery from 'utils/hooks/useMediaQuery'
+import useMediaQuery, { MAX_WIDTH_TABLET } from 'utils/hooks/useMediaQuery'
 import MvmtHeader3 from 'utils/typography/MvmtHeader3'
 import MvmtParagraphMedium from 'utils/typography/MvmtParagraphMedium'
-
-export const MAX_WIDTH_PHONE = '639px'
 
 interface PageDetailsCardProps {
   title: string
@@ -21,7 +19,7 @@ const PageDetailsCard = ({
   alignment = 'left',
   onClick,
 }: PageDetailsCardProps) => {
-  const isMobile = useMediaQuery(`(max-width: ${MAX_WIDTH_PHONE})`)
+  const isMobile = useMediaQuery(`(max-width: ${MAX_WIDTH_TABLET})`)
 
   return (
     <div
@@ -29,7 +27,7 @@ const PageDetailsCard = ({
       onClick={onClick}
     >
       <div
-        className={`leading-normal col-span-2 sm:col-span-1 ${
+        className={`leading-normal col-span-2 md:col-span-1 ${
           alignment === 'left'
             ? 'order-last'
             : isMobile
@@ -50,8 +48,8 @@ const PageDetailsCard = ({
         )}
       </div>
       {img && (
-        <div className="flex justify-center col-span-2 sm:col-span-1">
-          <img className="rounded-2xl" src={img} alt="" />
+        <div className="flex justify-center col-span-2 md:col-span-1">
+          <img className="rounded-2xl max-w-[450px]" src={img} alt="" />
         </div>
       )}
     </div>

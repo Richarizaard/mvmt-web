@@ -1,7 +1,7 @@
-import PageIntroCard from 'components/PageIntroCard'
 import pc from 'assets/pc.jpeg'
 import DropdownText from 'components/DropdownText'
-import ContentCard from 'components/ContentCard'
+import PageDetailsCard from 'components/PageDetailsCard'
+import PageIntroCard from 'components/PageIntroCard'
 
 const AboutUs = () => {
   return (
@@ -44,12 +44,13 @@ We won't settle for listless religion and drifting through life. We are on a jou
 \n\u2022 About marriage and gender. Marriage was instituted by God from the foundation of the world, before the corruption of sin. He intended marriage as a lifelong union of one man and one woman. We also believe God uniquely designed each individual as male or female, equal, but with complementary roles in the church and family. We honor God's sovereign design but we also condemn hateful behavior and attitudes toward anyone based on these or any other grounds.
 \n\u2022 About the end. The personal and bodily return of Jesus Christ to judge all mankind, consummate his kingdom, restore all creation, and gather his people to himself, is the hope of the Church. There will be a bodily resurrection of all people - the unbeliever to eternal conscious punishment in hell, the believer to eternal joy in the presence of God.`}
       />
-      <ContentCard
+      <PageDetailsCard
         title=""
         desc={`Pastor Charles has served as the pastor of Movement Ministry (formerly known as TKPC English Ministry) since the summer of 2015.  After graduating college, he worked professionally for 12 years before becoming a full-time pastor.  He is originally from Illinois, where he spent nearly all his life until he and his family moved to AZ in 2015.  He is married to Sarah and together they have three boys - Noah, Matthew, and Deacon.
           
 He has a Bachelor's in electrical engineering from the University of Illinois and a Master of Divinity from Columbia International University Seminary and School of Missions.`}
         img={pc}
+        alignment='left'
       />
     </>
   )
