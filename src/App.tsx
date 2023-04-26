@@ -3,8 +3,8 @@ import './App.css'
 
 export default function App() {
   return (
-    <div className="h-full py-12 px-8 sm:py-28 sm:px-36 flex justify-center">
-      <div className="md:max-w-[1200px]">
+    <div className="h-full py-20 px-12 md:px-24 flex justify-center">
+      <div className="lg:max-w-[1200px]">
         <PublicRoutes />
       </div>
     </div>
