@@ -28,9 +28,8 @@ const PageIntroCard = ({
   return (
     <div className="grid grid-cols-2 pt-6 pb-6 sm:pt-12">
       <div className="leading-normal col-span-2 sm:col-span-1">
-        <div className="flex justify-start pb-2 md:pb-4 text-4xl md:text-7xl font-semibold">
-          {title && title}
-          <br />
+        <div className="pb-2 md:pb-4 text-4xl md:text-7xl font-semibold">
+          <div className="flex justify-start">{title && title}</div>
           {typedStrings && (
             <Typed
               strings={typedStrings}
