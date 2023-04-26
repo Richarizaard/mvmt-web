@@ -1,12 +1,14 @@
 import logo from 'assets/test.jpg'
 import { useState } from 'react'
-import { Link } from 'react-router-dom'
+import { Link, useLocation } from 'react-router-dom'
 import SVGIcon from 'utils/Icon'
 import useMediaQuery from 'utils/hooks/useMediaQuery'
 
 const MvmtHeader = () => {
   const [menu, setMenu] = useState<boolean>(false)
   const isMobile = useMediaQuery(`(max-width: ${'639px'})`)
+  const currentRoute = useLocation()
+
   return (
     <>
       {!isMobile && (
@@ -47,16 +49,18 @@ const MvmtHeader = () => {
               <div className="flex flex-col h-full w-full justify-start items-center space-y-1 pb-3 pt-8 mt-12">
                 <div className="flex justify-end w-full pr-10 mr-4">
                   <button onClick={() => setMenu(false)}>
-                    <SVGIcon name="cancel"/>
+                    <SVGIcon name="cancel" />
                   </button>
                 </div>
-                <Link
-                  to={'/'}
-                  onClick={() => setMenu(false)}
-                  className="hover:text-sky-500 block rounded-md px-3 py-4 font-semibold text-lg"
-                >
-                  Home
-                </Link>
+                {currentRoute.pathname !== '/' && (
+                  <Link
+                    to={'/'}
+                    onClick={() => setMenu(false)}
+                    className="hover:text-sky-500 block rounded-md px-3 py-4 font-semibold text-lg"
+                  >
+                    Home
+                  </Link>
+                )}
                 <Link
                   to={'/ministries'}
                   onClick={() => setMenu(false)}

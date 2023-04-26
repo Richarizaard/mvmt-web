@@ -13,7 +13,9 @@ const ContentCard = ({ title, desc, img }: ContentCardProps) => {
     <div className="w-auto flex items-center flex-col sm:p-2 m-2 rounded-3xl animate-fadeIn">
       <img className="rounded-3xl sm:p-2 py-2" src={img} alt="" />
       <MvmtHeader3 className="pb-1 md:pb-2">{title}</MvmtHeader3>
-      <MvmtParagraphMedium className="sm:p-2 py-2 whitespace-pre-wrap">{desc}</MvmtParagraphMedium>
+      <MvmtParagraphMedium className="sm:p-2 py-2 whitespace-pre-wrap">
+        {desc}
+      </MvmtParagraphMedium>
     </div>
   )
 }
