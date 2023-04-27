@@ -22,10 +22,7 @@ const PageDetailsCard = ({
   const isMobile = useMediaQuery(`(max-width: ${MAX_WIDTH_TABLET})`)
 
   return (
-    <div
-      className="grid grid-cols-2 py-4 sm:py-8 gap-2 sm:gap-24 animate-fadeIn"
-      onClick={onClick}
-    >
+    <div className="grid grid-cols-2 py-4 sm:py-8 gap-2 sm:gap-24">
       <div
         className={`leading-normal col-span-2 md:col-span-1 ${
           alignment === 'left'
@@ -41,7 +38,10 @@ const PageDetailsCard = ({
         </MvmtParagraphMedium>
         {ctaButtons && (
           <div className="flex justify-start gap-4 py-4 text-sm">
-            <button className="rounded-full border-2 border-sky-500 p-2 px-4 ease-in-out duration-500 hover:bg-sky-500 hover:text-white">
+            <button
+              onClick={onClick}
+              className="rounded-full border-2 border-sky-500 p-2 px-4 hover:bg-sky-500 hover:text-white"
+            >
               Learn more
             </button>
           </div>

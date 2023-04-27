@@ -29,7 +29,7 @@ const DropdownText = ({ title, text }: DropdownTextProps) => {
       {dropdown && (
         <div className="pb-2 md:pb-4 animate-fadeIn">
           <MvmtParagraphMedium className="whitespace-pre-wrap">
-            <div dangerouslySetInnerHTML={{ __html: text }} />
+            <span dangerouslySetInnerHTML={{ __html: text }} />
           </MvmtParagraphMedium>
         </div>
       )}

@@ -20,7 +20,7 @@ const FeatureCard = ({
 }: FeatureCardProps) => {
   return (
     <Link
-      className="w-auto flex items-center flex-col p-2 m-2 cursor-pointer rounded-3xl shadow-black hover:shadow-lg group animate-fadeIn"
+      className="w-auto flex items-center flex-col p-2 m-2 cursor-pointer rounded-3xl shadow-black hover:shadow-lg group"
       to={to}
       rel="noopener noreferrer"
       target={openNewTab ? '_blank' : ''}
