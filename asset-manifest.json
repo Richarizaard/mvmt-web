@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/mvmt-web/static/css/main.2c6c1131.css",
-    "main.js": "/mvmt-web/static/js/main.fca81007.js",
+    "main.css": "/mvmt-web/static/css/main.7f82010d.css",
+    "main.js": "/mvmt-web/static/js/main.19461fc6.js",
     "static/js/787.5146ee10.chunk.js": "/mvmt-web/static/js/787.5146ee10.chunk.js",
     "static/media/home.png": "/mvmt-web/static/media/home.5b31363965490856527f.png",
     "static/media/fellowship.jpeg": "/mvmt-web/static/media/fellowship.4daf583a7f28f88dd5fa.jpeg",
@@ -18,12 +18,12 @@
     "static/media/montoya.jpeg": "/mvmt-web/static/media/montoya.1b3c363b226658684c69.jpeg",
     "static/media/mike.jpeg": "/mvmt-web/static/media/mike.04075f9960e9ab702a24.jpeg",
     "index.html": "/mvmt-web/index.html",
-    "main.2c6c1131.css.map": "/mvmt-web/static/css/main.2c6c1131.css.map",
-    "main.fca81007.js.map": "/mvmt-web/static/js/main.fca81007.js.map",
+    "main.7f82010d.css.map": "/mvmt-web/static/css/main.7f82010d.css.map",
+    "main.19461fc6.js.map": "/mvmt-web/static/js/main.19461fc6.js.map",
     "787.5146ee10.chunk.js.map": "/mvmt-web/static/js/787.5146ee10.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.2c6c1131.css",
-    "static/js/main.fca81007.js"
+    "static/css/main.7f82010d.css",
+    "static/js/main.19461fc6.js"
   ]
 }
