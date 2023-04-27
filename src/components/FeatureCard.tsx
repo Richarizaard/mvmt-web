@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import SVGIcon from 'utils/Icon'
 import MvmtHeader2 from 'utils/typography/MvmtHeader2'
 import MvmtParagraphMedium from 'utils/typography/MvmtParagraphMedium'
@@ -6,14 +7,23 @@ interface FeatureCardProps {
   text: string
   title: string
   svg: string
-  onClick?: () => void
+  to: string
+  openNewTab?: boolean
 }
 
-const FeatureCard = ({ text, title, svg, onClick }: FeatureCardProps) => {
+const FeatureCard = ({
+  text,
+  title,
+  svg,
+  to,
+  openNewTab = false,
+}: FeatureCardProps) => {
   return (
-    <div
+    <Link
       className="w-auto flex items-center flex-col p-2 m-2 cursor-pointer rounded-3xl shadow-black hover:shadow-lg group animate-fadeIn"
-      onClick={onClick}
+      to={to}
+      rel="noopener noreferrer"
+      target={openNewTab ? '_blank' : ''}
     >
       <SVGIcon
         name={svg}
@@ -21,7 +31,7 @@ const FeatureCard = ({ text, title, svg, onClick }: FeatureCardProps) => {
       />
       <MvmtHeader2 className="py-2 text-center">{title}</MvmtHeader2>
       <MvmtParagraphMedium className="text-center">{text}</MvmtParagraphMedium>
-    </div>
+    </Link>
   )
 }
 

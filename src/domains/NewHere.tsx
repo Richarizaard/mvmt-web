@@ -1,6 +1,8 @@
 import PageIntroCard from 'components/PageIntroCard'
 import home from 'assets/home.png'
 import DropdownText from 'components/DropdownText'
+import MvmtFooter from 'components/MvmtFooter'
+import MvmtHeader from 'components/MvmtHeader'
 
 const faq = [
   {
@@ -37,6 +39,7 @@ const faq = [
 const NewHere = () => {
   return (
     <>
+      <MvmtHeader />
       <PageIntroCard
         typedStrings={['New here?']}
         img={home}
@@ -49,6 +52,7 @@ const NewHere = () => {
           return <DropdownText title={qa.title} text={qa.text} />
         })}
       </div>
+      <MvmtFooter />
     </>
   )
 }

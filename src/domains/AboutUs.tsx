@@ -1,13 +1,16 @@
 import pc from 'assets/pc.jpeg'
 import DropdownText from 'components/DropdownText'
+import MvmtFooter from 'components/MvmtFooter'
+import MvmtHeader from 'components/MvmtHeader'
 import PageDetailsCard from 'components/PageDetailsCard'
 import PageIntroCard from 'components/PageIntroCard'
 
 const AboutUs = () => {
   return (
     <>
+      <MvmtHeader />
       <PageIntroCard typedStrings={['About us']} />
-      <div className="max-w-[300px] sm:max-w-none">
+      <div className="max-w-[400px] sm:max-w-none">
         <DropdownText
           title={'Who we are'}
           text={`Christ-centered. Everything is by Christ, through Christ, and for Christ.
@@ -53,6 +56,7 @@ He has a Bachelor's in electrical engineering from the University of Illinois an
         img={pc}
         alignment="left"
       />
+      <MvmtFooter />
     </>
   )
 }

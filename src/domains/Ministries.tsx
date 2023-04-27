@@ -8,6 +8,8 @@ import welcoming from 'assets/welcoming.jpeg'
 import praise from 'assets/praise.jpeg'
 import childrens from 'assets/childrens.jpeg'
 import youth from 'assets/youth.jpeg'
+import MvmtHeader from 'components/MvmtHeader'
+import MvmtFooter from 'components/MvmtFooter'
 
 const ministries = [
   {
@@ -46,6 +48,7 @@ This ministry also includes technical and A/V support needed for Sunday services
 const Ministries = () => {
   return (
     <>
+      <MvmtHeader />
       <PageIntroCard
         typedStrings={['Ministries']}
         desc={`At Movement, we see serving as a way to build the church as well as an opportunity for growth and discipleship.`}
@@ -63,6 +66,7 @@ const Ministries = () => {
           )
         })}
       </div>
+      <MvmtFooter />
     </>
   )
 }

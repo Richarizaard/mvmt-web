@@ -8,12 +8,15 @@ import lifeGroup from 'assets/lifeGroup.jpeg'
 import serving from 'assets/serving.jpeg'
 import outreach from 'assets/outreach.jpeg'
 import FeatureCard from 'components/FeatureCard'
+import MvmtFooter from 'components/MvmtFooter'
+import MvmtHeader from 'components/MvmtHeader'
 
 const Homepage = () => {
   const nav = useNavigate()
 
   return (
     <>
+      <MvmtHeader />
       <PageIntroCard
         title={'Welcome to'}
         typedStrings={['Movement']}
@@ -26,27 +29,26 @@ const Homepage = () => {
           text={`11:00 AM - In person and online`}
           title="Sunday worship"
           svg={'cross'}
-          onClick={() =>
-            window.open('https://www.youtube.com/@MovementMinistry')
-          }
+          to={'https://www.youtube.com/@MovementMinistry'}
+          openNewTab
         />
         <FeatureCard
           text={`Are you new or planning to visit soon? We have some answers to questions you might be wondering!`}
           title="New here?"
           svg={'profile'}
-          onClick={() => nav('/new-here')}
+          to={'/new-here'}
         />
         <FeatureCard
           text={`To raise fruitful and impactful followers of Jesus Christ.  `}
           title="Why we exist"
           svg={'bible'}
-          onClick={() => nav('/about-us')}
+          to={'/about-us'}
         />
         <FeatureCard
           text={`Questions or feedback? Drop us a note!`}
           title="Contact us"
           svg={'contactUs'}
-          onClick={() => nav('/contact-us')}
+          to={'/contact-us'}
         />
       </div>
       <PageDetailsCard
@@ -73,6 +75,7 @@ const Homepage = () => {
         onClick={() => nav('/missions')}
         alignment={'right'}
       />
+      <MvmtFooter />
     </>
   )
 }

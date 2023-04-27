@@ -30,7 +30,7 @@ const MvmtFooter = () => {
           <SVGIcon name="email" className="hover:fill-sky-500" />
         </Link>
       </div>
-      <div>
+      <div className="text-center">
         1150 South Dobson Road | Chandler, AZ 85286
         <br />
         <br />© 2023 Movement Ministry. All rights reserved.

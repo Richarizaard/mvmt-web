@@ -5,6 +5,8 @@ import conrad from 'assets/conrad.png'
 import mike from 'assets/mike.jpeg'
 import piantedosi from 'assets/piantedosi.png'
 import PageDetailsCard from 'components/PageDetailsCard'
+import MvmtHeader from 'components/MvmtHeader'
+import MvmtFooter from 'components/MvmtFooter'
 
 const missions = [
   {
@@ -40,6 +42,7 @@ We have the opportunity to help refugee families learn English through tutoring 
 const Missions = () => {
   return (
     <>
+      <MvmtHeader />
       <PageIntroCard
         typedStrings={['Mission Partnerships']}
         desc={`We believe every church has its own role to play in this grand mission of God. We aim to support missions work in various parts of the world through prayer and finances, but we most actively partner with missionaries and ministries that are geographically close to Arizona.
@@ -65,6 +68,7 @@ Matthew 28:19-20`}</div>
           />
         )
       })}
+      <MvmtFooter />
     </>
   )
 }

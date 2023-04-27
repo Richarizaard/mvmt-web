@@ -9,6 +9,10 @@ const MvmtHeader = () => {
   const isMobile = useMediaQuery(`(max-width: ${'639px'})`)
   const currentRoute = useLocation()
 
+  const handleLink = () => {
+    setMenu(false)
+    window.scrollTo(0, 0)
+  }
   return (
     <>
       {!isMobile && (
@@ -38,14 +42,14 @@ const MvmtHeader = () => {
         </nav>
       )}
       {isMobile && (
-        <div>
+        <div className="overflow-hidden">
           <div className="flex justify-end">
             <button onClick={() => setMenu(true)}>
               <SVGIcon name="hamburger" />
             </button>
           </div>
           {menu && (
-            <div className="absolute z-10 left-0 top-0 backdrop-blur-lg bg-gray-300/60 h-full w-full ">
+            <div className="absolute z-10 left-0 top-0 backdrop-blur-lg bg-gray-300/60 h-full w-full">
               <div className="flex flex-col h-full w-full justify-start items-center space-y-1 pb-3 pt-8 mt-12">
                 <div className="flex justify-end w-full pr-10 mr-4">
                   <button onClick={() => setMenu(false)}>
@@ -55,7 +59,7 @@ const MvmtHeader = () => {
                 {currentRoute.pathname !== '/' && (
                   <Link
                     to={'/'}
-                    onClick={() => setMenu(false)}
+                    onClick={handleLink}
                     className="hover:text-sky-500 block rounded-md px-3 py-4 font-semibold text-lg"
                   >
                     Home
@@ -63,7 +67,7 @@ const MvmtHeader = () => {
                 )}
                 <Link
                   to={'/ministries'}
-                  onClick={() => setMenu(false)}
+                  onClick={handleLink}
                   className="hover:text-sky-500 block rounded-md px-3 py-4 font-semibold text-lg"
                 >
                   Ministries
@@ -71,7 +75,7 @@ const MvmtHeader = () => {
 
                 <Link
                   to="/sermons"
-                  onClick={() => setMenu(false)}
+                  onClick={handleLink}
                   className="hover:text-sky-500 block rounded-md px-3 py-4 font-semibold text-lg"
                 >
                   Sermons
@@ -79,7 +83,7 @@ const MvmtHeader = () => {
 
                 <Link
                   to="/events"
-                  onClick={() => setMenu(false)}
+                  onClick={handleLink}
                   className="hover:text-sky-500 block rounded-md px-3 py-4 font-semibold text-lg"
                 >
                   Events
@@ -87,14 +91,14 @@ const MvmtHeader = () => {
 
                 <Link
                   to="/about-us"
-                  onClick={() => setMenu(false)}
+                  onClick={handleLink}
                   className="hover:text-sky-500 block rounded-md px-3 py-4 font-semibold text-lg"
                 >
                   About us
                 </Link>
                 <Link
                   to="/give"
-                  onClick={() => setMenu(false)}
+                  onClick={handleLink}
                   className="hover:text-sky-500 block rounded-md px-3 py-4 font-semibold text-lg"
                 >
                   Give
