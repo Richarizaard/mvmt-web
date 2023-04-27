@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom'
+import { HashRouter, Route, Routes } from 'react-router-dom'
 import Homepage from 'domains/Homepage'
 import Ministries from 'domains/Ministries'
 import AboutUs from 'domains/AboutUs'
@@ -12,7 +12,8 @@ import ScrollToTopOnRoute from 'utils/hooks/ScrollToTopOnRoute'
 
 const PublicRoutes = () => {
   return (
-    <BrowserRouter>
+    // <BrowserRouter>
+    <HashRouter>
       <ScrollToTopOnRoute />
       <Routes>
         <Route path="/" element={<Homepage />} />
@@ -25,7 +26,8 @@ const PublicRoutes = () => {
         <Route path="/new-here" element={<NewHere />} />
         <Route path="/missions" element={<Missions />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
+    // </BrowserRouter>
   )
 }
 
