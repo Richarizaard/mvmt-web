@@ -48,8 +48,8 @@ const NewHere = () => {
         }
       />
       <div className="max-w-[900px]">
-        {faq.map((qa) => {
-          return <DropdownText title={qa.title} text={qa.text} />
+        {faq.map((qa, idx) => {
+          return <DropdownText key={idx} title={qa.title} text={qa.text} />
         })}
       </div>
       <MvmtFooter />
